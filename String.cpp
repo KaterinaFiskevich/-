@@ -90,9 +90,8 @@ bool match(const char *str, const char *pat) {
 String::operator const char*() const {
 	return str;
 }
-String::operator char*() {
-	return str;
-}
+
+
 
 void move(String &str1, String &str2) {
 	str1.clear();

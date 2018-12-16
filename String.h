@@ -24,10 +24,11 @@ public:
 	friend bool operator==(const String &Obj1, const String &Obj2);
 	friend bool operator!=(const String &Obj1, const String &Obj2);
 
+	const char& operator[](int i) const { return str[i]; }
+
 	friend bool match(const char *str, const char *pat);
 
 	operator const char*() const;
-	operator char*();
 
 	friend void move(String &str1, String &str2);
 

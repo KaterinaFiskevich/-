@@ -3,7 +3,8 @@
 
 #include "String.h"
 
-int get_dec(const String& str);
+int get_dec(const String &str);
 bool check_dec(int dec, int left, int right = 2147483647);
+bool check_un_dec(const String &str);
 
 #endif
